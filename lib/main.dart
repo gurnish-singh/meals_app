@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './categories_screan.dart';
+import './screens/meals_screan.dart';
+import './screens/categories_screan.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,13 +27,17 @@ class MyApp extends StatelessWidget {
                 color: Color.fromRGBO(20, 51, 51, 1),//only color
               ),
               title: TextStyle( 
-                fontSize: 2,
+                fontSize: 20,
                 fontFamily: 'RobotoCondensed',
                 fontWeight: FontWeight.bold,
               )
             ),
       ),
-      home: CategoriesScrean(),//first page that appears on the opening of the app
+     // home: CategoriesScrean(),//first page that appears on the opening of the app
+      routes: {//its a list of routes for navigation we are using 
+MealsScrean.routname:(context)=>MealsScrean(),//we dont pass arguments in here
+'/':(context) => CategoriesScrean(),//route name for home is simply'/'
+      },
     );
   }
 }
