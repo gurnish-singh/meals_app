@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import './models/category.dart';
 import './models/meals.dart';
 
-const DUMMY_CATEGORIES = const [//const means we cant change it from the app
+const DUMMY_CATEGORIES = const [
+  //const means we cant change it from the app
   Category(
     id: 'c1',
     title: 'Italian',
