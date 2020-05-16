@@ -64,7 +64,7 @@ else{
 
   void selectMeal(BuildContext context)// to go to the ohter screan
    {
-     Navigator.of(context).pushNamed(MealDetailScrean.routname,arguments: id);
+     Navigator.of(context).pushNamed(MealDetailScrean.routname,arguments:id,);
    }
   @override
   Widget build(BuildContext context) {

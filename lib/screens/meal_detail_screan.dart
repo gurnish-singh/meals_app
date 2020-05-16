@@ -14,7 +14,6 @@ class MealDetailScrean extends StatelessWidget {
       child: Text(title, style: Theme.of(context).textTheme.title),
     );
   }
-
   Widget buildContainer(Widget child) {
     return Container(
         decoration: BoxDecoration(
