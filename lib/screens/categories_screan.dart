@@ -5,9 +5,7 @@ import '../dummy_data.dart';
 class CategoriesScrean extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:AppBar(title: Text('delimeals'),) ,
-          body: GridView( // just like list view but with items side by side
+    return  GridView( // just like list view but with items side by side
           padding : const EdgeInsets.all(25),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200, //pixels
@@ -25,7 +23,6 @@ class CategoriesScrean extends StatelessWidget {
             DUMMY_CATEGORIES //apan nu dummy categories cho sirf 2 object chahide ne taan apan usnu map krange
                 .map((catData) => CategoryItem(catData.id,catData.title, catData.color))
                 .toList(),
-      ),
-    );
+      );
   }
 }
